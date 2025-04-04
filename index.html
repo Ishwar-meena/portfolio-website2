@@ -14,16 +14,26 @@
       font-weight: 400;
       font-style: normal;
       color: whitesmoke;
-      overflow-x: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      overflow-x: hidden !important;
+      max-width: 100vw;
     }
   </style>
 </head>
 
-<body class="bg-[#111827] ">
+<body class="bg-[#111827] overflow-x-hidden max-w-full">
   <div class="hero-wrapper min-h-screen bg-[url(Assets/section.svg)] bg-no-repeat">
     <nav class="flex    sm:justify-between justify-center items-center  sm:px-16 sm:py-4 py-2">
       <div class="logo text-4xl cursor-pointer "><a href="/">Hacker x</a></div>
-      <ul class="hidden sm:flex gap-16 bg-white/5 shadow-lg backdrop-blur-lg bg-opacity-50 border border-white/20 rounded-full py-4 px-6 lg:mr-26 mt-2">
+      <ul
+        class="hidden sm:flex gap-16 bg-white/5 shadow-lg backdrop-blur-lg bg-opacity-50 border border-white/20 rounded-full py-4 px-6 lg:mr-26 mt-2">
         <li><a href="/">Home</a></li>
         <li><a href="#projects">Frontend</a></li>
         <li><a href="/">Backend</a></li>
@@ -38,10 +48,13 @@
           </div>
         </div>
         <div class="desc hidden lg:block leading-7">
-          I’m a Fullstack Web Developer skilled in React, Tailwind CSS, and modern web technologies. I create responsive, high-performance applications with a focus on clean design, seamless user experience, and scalable solutions—turning complex ideas into impactful digital products.</div>
+          I’m a Fullstack Web Developer skilled in React, Tailwind CSS, and modern web technologies. I create
+          responsive, high-performance applications with a focus on clean design, seamless user experience, and scalable
+          solutions—turning complex ideas into impactful digital products.</div>
         <div class="btn hidden lg:block mt-4">
           <button
-            class="bg-gradient-to-r from-purple-600 to-rose-500 hover:from-purple-600 hover:to-rose-600 px-4 py-1.5 rounded-sm text-lg mr-4 cursor-pointer"><a href= "mailto:ishwarmeenakherawan@gmail.com">Hire me</a></button>
+            class="bg-gradient-to-r from-purple-600 to-rose-500 hover:from-purple-600 hover:to-rose-600 px-4 py-1.5 rounded-sm text-lg mr-4 cursor-pointer"><a
+              href="mailto:ishwarmeenakherawan@gmail.com">Hire me</a></button>
           <button
             class="bg-gradient-to-r from-purple-600 to-rose-600 hover:from-purple-700 hover:to-rose-700 px-4 py-1.5 rounded-sm text-lg ml-4 cursor-pointer">Contect
             me</button>
@@ -59,7 +72,8 @@
         </div>
         <div class="btn lg:hidden mt-4">
           <button
-            class="bg-gradient-to-r from-purple-600 to-rose-500 hover:from-purple-600 hover:to-rose-600 px-4 py-1.5 rounded-sm text-lg mr-4 cursor-pointer"><a href= "mailto:ishwarmeenakherawan@gmail.com">Hire me</a></button>
+            class="bg-gradient-to-r from-purple-600 to-rose-500 hover:from-purple-600 hover:to-rose-600 px-4 py-1.5 rounded-sm text-lg mr-4 cursor-pointer"><a
+              href="mailto:ishwarmeenakherawan@gmail.com">Hire me</a></button>
           <button
             class="bg-gradient-to-r from-purple-600 to-rose-600 hover:from-purple-700 hover:to-rose-700 px-4 py-1.5 rounded-sm text-lg ml-4 cursor-pointer">Contect
             me</button>
@@ -110,7 +124,8 @@
         <div class="degree capitalize font-medium text-lg">higher secondary mathematics <span
             class="bg-green-200 sm:hidden text-green-800 rounded-full sm:h-10 h-6 sm:px-1.5 sm:py-2 sm:text-[15px] text-[10px] p-1 order-1 sm:order-0 ">2023
             - 2026</span></div>
-        <div class="info text-[13px] text-gray-400 w-96">Studied Mathematics in high school, building strong problem-solving and logical thinking skills—sparking my passion for technology and software development.</div>
+        <div class="info text-[13px] text-gray-400 w-96">Studied Mathematics in high school, building strong
+          problem-solving and logical thinking skills—sparking my passion for technology and software development.</div>
       </div>
     </div>
     <div class="edu-box flex justify-center sm:gap-1.5  mr-1 sm:mr-0" data-aos="fade-up" data-aos-duration="1200">
@@ -124,10 +139,12 @@
       </div>
       <div class="sm:ml-5 ml-2.5">
         <div class="college capitalize text-red-500 font-medium">adarsh vidya mandir <span
-          class="city text-gray-300 text-[13px]">Khandar</span></div>
+            class="city text-gray-300 text-[13px]">Khandar</span></div>
         <div class="degree capitalize font-medium text-lg">Secondary education <span
-            class="bg-green-200 sm:hidden text-green-800 rounded-full sm:h-10 h-6 sm:px-1.5 sm:py-2 sm:text-[15px] text-[10px] p-1 order-1 sm:order-0 ">2016 - 2021</span></div>
-        <div class="info text-[13px] text-gray-400 w-96">Completed Secondary Education, exploring diverse subjects and reading various books—building curiosity, strong basics, and a lifelong love for learning.</div>
+            class="bg-green-200 sm:hidden text-green-800 rounded-full sm:h-10 h-6 sm:px-1.5 sm:py-2 sm:text-[15px] text-[10px] p-1 order-1 sm:order-0 ">2016
+            - 2021</span></div>
+        <div class="info text-[13px] text-gray-400 w-96">Completed Secondary Education, exploring diverse subjects and
+          reading various books—building curiosity, strong basics, and a lifelong love for learning.</div>
       </div>
     </div>
   </div>
@@ -217,9 +234,12 @@
     <div class="project-boxes mb-9 flex flex-wrap justify-evenly">
       <div
         class="project-box my-5 pb-4 cursor-pointer  bg-white/5 backdrop-blur-lg border border-white/5  w-[22rem] ml-4 flex flex-col items-center rounded-md">
-        <div class="w-full h-[171px]"><a href="https://jad00.netlify.app/" target="_blank"><img class="w-full h-full" src="Assets/jadoo.png" alt=""></a></div>
-        <div class="heading capitalize text-lg font-medium text-center">Plan, Book, Explore – Jadoo Has You Covered 🌟✈️</div>
-        <div class="desc  text-sm pl-3 my-2 text-gray-500">Built Jadoo using HTML, CSS, and JavaScript. A responsive travel website offering seamless booking and stunning destinations.</div>
+        <div class="w-full h-[171px]"><a href="https://jad00.netlify.app/" target="_blank"><img class="w-full h-full"
+              src="Assets/jadoo.png" alt=""></a></div>
+        <div class="heading capitalize text-lg font-medium text-center">Plan, Book, Explore – Jadoo Has You Covered 🌟✈️
+        </div>
+        <div class="desc  text-sm pl-3 my-2 text-gray-500">Built Jadoo using HTML, CSS, and JavaScript. A responsive
+          travel website offering seamless booking and stunning destinations.</div>
         <div class="flex flex-wrap justify-center items-center gap-2 lowercase my-1 ">
           <span class="bg-rose-600 rounded-full py-0.5 px-2">Html</span>
           <span class="bg-rose-600 rounded-full py-0.5 px-2">css</span>
@@ -244,9 +264,11 @@
       </div>
       <div
         class="project-box my-5 pb-4 cursor-pointer  bg-white/5 backdrop-blur-lg border border-white/5  w-[22rem] ml-4 flex flex-col items-center rounded-md">
-        <div class="w-full h-[171px]"><a href="https://tailwind-x.netlify.app/" target="_blank"><img class="w-full h-full" src="Assets/xclone.png" alt="xclone"></a></div>
+        <div class="w-full h-[171px]"><a href="https://tailwind-x.netlify.app/" target="_blank"><img
+              class="w-full h-full" src="Assets/xclone.png" alt="xclone"></a></div>
         <div class="heading capitalize text-lg font-medium text-center"> A Cutting-Edge Social Media Clone</div>
-        <div class="desc  text-sm pl-3 my-2 text-gray-500">A responsive social media clone featuring modern design, interactive elements, and seamless user experience built with HTML and Tailwind CSS.</div>
+        <div class="desc  text-sm pl-3 my-2 text-gray-500">A responsive social media clone featuring modern design,
+          interactive elements, and seamless user experience built with HTML and Tailwind CSS.</div>
         <div class="flex flex-wrap justify-center items-center gap-2 lowercase my-1 ">
           <span class="bg-rose-600 rounded-full py-0.5 px-2">Html</span>
           <span class="bg-rose-600 rounded-full py-0.5 px-2">tailwind css</span>
@@ -270,9 +292,11 @@
       </div>
       <div
         class="project-box my-5 pb-4 cursor-pointer  bg-white/5 backdrop-blur-lg border border-white/5  w-[22rem] ml-4 flex flex-col items-center rounded-md">
-        <div class="w-full h-[171px]"><a href="https://skating-board.netlify.app/" target="_blank"><img class="w-full h-full" src="Assets/sktboard.png" alt=""></a></div>
+        <div class="w-full h-[171px]"><a href="https://skating-board.netlify.app/" target="_blank"><img
+              class="w-full h-full" src="Assets/sktboard.png" alt=""></a></div>
         <div class="heading capitalize text-lg font-medium text-center">A Modern Skateboarding School Website</div>
-        <div class="desc  text-sm pl-3 my-2 text-gray-500">Responsive skateboarding school website featuring classes, shop, testimonials, and videos. Built with React and Tailwind CSS.</div>
+        <div class="desc  text-sm pl-3 my-2 text-gray-500">Responsive skateboarding school website featuring classes,
+          shop, testimonials, and videos. Built with React and Tailwind CSS.</div>
         <div class="flex flex-wrap justify-center items-center gap-2 lowercase my-1 ">
           <span class="bg-rose-600 rounded-full py-0.5 px-2">Html</span>
           <span class="bg-rose-600 rounded-full py-0.5 px-2">tailwind css</span>
